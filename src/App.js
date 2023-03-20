@@ -1,16 +1,15 @@
 import './App.css';
 import Pages from './views/pages';
-
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
-
-const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
-  cache: new InMemoryCache(),
-});
+import createClient from './services/apollo';
+import { ApolloProvider } from '@apollo/client';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const client = createClient();
 function App() {
   return (
     <ApolloProvider client={client}>
       <Pages />
+      <ToastContainer />
     </ApolloProvider>
   );
 }

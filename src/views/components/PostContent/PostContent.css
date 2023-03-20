@@ -1,0 +1,12 @@
+.post-content{
+    width: 100%;
+    height: fit-content;
+    padding: .5rem;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .post-content{
+        width: 700px;
+    }
+}

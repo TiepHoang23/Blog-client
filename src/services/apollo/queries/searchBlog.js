@@ -1,25 +1,14 @@
 import gql from 'graphql-tag';
 
-const HEARTRATES_QUERY = gql`
-  query heartRates($input: HeartRatesFilter!){
-    heartRates(filter: $input) {
-      avgs{
-        time
-        value
-      }
-      maxs
-      {
-        time
-        value
-      }
-      mins{
-        time  
-        value
-      }
-      endTime
-      fromTime
+const SEARCHBLOG_QUERY = gql`
+  query SearchBlogs($filters: BlogFilterInput) {
+    searchBlogs(filters: $filters) {
+      content
+      id
+      nlikes
+      title
     }
   }
 `;
 
-export default HEARTRATES_QUERY;
+export default SEARCHBLOG_QUERY;

@@ -1,0 +1,21 @@
+.post{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(230, 230, 230);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 8px;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.post:hover{
+    background-color: white;
+    box-shadow: 0 0 5px 5px rgb(202, 202, 202);
+}
+
+.post-title{
+    font-weight: bold;
+    color: rgb(255, 68, 68)
+}

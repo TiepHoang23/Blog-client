@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import Spinner from 'react-bootstrap/Spinner';
 
 /**
@@ -12,11 +11,11 @@ const QueryResult = ({ loading, error, data, children }) => {
   }
   if (loading) {
     return (
-      <SpinnerContainer>
+      <div className='SpinnerContainer'>
         <Spinner animation='border' role='status'>
           <span className='visually-hidden'>Loading...</span>
         </Spinner>
-      </SpinnerContainer>
+      </div>
     );
   }
   if (!data) {
@@ -28,12 +27,3 @@ const QueryResult = ({ loading, error, data, children }) => {
 };
 
 export default QueryResult;
-
-/** Query Result styled components */
-const SpinnerContainer = styled.div({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '100%',
-  height: '100vh',
-});

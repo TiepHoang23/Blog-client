@@ -1,12 +1,18 @@
 import gql from 'graphql-tag';
 
 const GETBLOGBYID_QUERY = gql`
-  query GetBlogById($blogId: ID!) {
+  query Query($blogId: ID!) {
     getBlogById(blogId: $blogId) {
+      comment {
+        message
+        createdAt
+        author {
+          username
+        }
+      }
       content
-      id
-      nlikes
       title
+      id
     }
   }
 `;

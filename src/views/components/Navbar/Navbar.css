@@ -1,0 +1,47 @@
+.nav-container{
+    background-color: rgb(29, 29, 29);
+    padding: 1rem 3rem;
+    display: flex;
+    color: white;
+}
+
+.nav-brand{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-brand a{
+    text-decoration: none;
+    color: white;
+}
+
+.options-container{
+    margin-left: auto;
+    display: flex;
+}
+
+.ms-2{
+    margin-left: 2rem;
+}
+
+.button{
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: .5rem;
+    margin-left: .5rem;
+    border: solid 1px gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: .2s;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.button:hover{
+    background-color: grey;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}

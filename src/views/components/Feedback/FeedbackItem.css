@@ -1,0 +1,6 @@
+.feedback-item{
+    border: solid 1px grey;
+    border-radius: 6px;
+    margin: .5rem 0;
+    padding: .5rem;
+}
